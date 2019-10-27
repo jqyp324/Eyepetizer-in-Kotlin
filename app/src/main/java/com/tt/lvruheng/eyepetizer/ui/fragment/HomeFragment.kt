@@ -30,6 +30,8 @@ class HomeFragment : BaseFragment(), HomeContract.View, SwipeRefreshLayout.OnRef
     var mList = ArrayList<ItemListBean>()
     var mAdapter: HomeAdatper? = null
     var data: String? = null
+
+
     override fun setData(bean: HomeBean) {
         val regEx = "[^0-9]"
         val p = Pattern.compile(regEx)
